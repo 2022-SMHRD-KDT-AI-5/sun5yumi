@@ -7,6 +7,7 @@ public class Text {
 		System.out.println("두 번째 커밋!");
 		//
 		System.out.println("네 번째 커밋!");
+		System.out.println("다섯번째 커밋");
 	}
 
 }
