@@ -5,10 +5,11 @@ public class Text {
 		
 		System.out.println("첫 번째 커밋!");
 		System.out.println("두 번째 커밋!");
-		//
+		System.out.println("세 번째 커밋!");
 		System.out.println("네 번째 커밋!");
 		System.out.println("다섯번째 커밋!");
-		
+
+		System.out.println("여섯번째 커밋!");
 	}
 
 }
