@@ -7,7 +7,8 @@ public class Text {
 		System.out.println("滴 锅掳 目乖!");
 		System.out.println("技 锅掳 目乖!");
 		System.out.println("匙 锅掳 目乖!");
-		System.out.println("促几锅掳 目乖");
+		System.out.println("促几锅掳 目乖!");
+		System.out.println("咯几锅掳 目乖!");
 	}
 
 }
