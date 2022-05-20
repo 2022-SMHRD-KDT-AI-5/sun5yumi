@@ -9,6 +9,7 @@ public class Text {
 		//
 		System.out.println("³× ¹øÂ° Ä¿¹Ô!");
 		System.out.println("´Ù¼¸¹øÂ° Ä¿¹Ô");
+	    System.out.println("¶Ç");
 	}
 
 }
