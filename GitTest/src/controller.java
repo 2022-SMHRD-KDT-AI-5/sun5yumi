@@ -15,7 +15,7 @@ public class controller {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			String url = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe";
 			String user = "cgi_7_0516_3";
-			String password = "smhrd3";
+			String password = "smhdr3";
 			
 			conn = DriverManager.getConnection(url, user, password);
 			} catch (ClassNotFoundException e) {
@@ -44,24 +44,32 @@ public class controller {
 		}
 	}
 
+<<<<<<< HEAD
+	public void insert(info cat_info) {
+=======
 	public void insert(String id, String pw, String cat_name, String cat_species) {
 	// 회원가입 메소드
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-AI-5/sun5yumi.git
 	getCon();
 	try {
+<<<<<<< HEAD
+		String sql = "insert into mem values(?, ?, ?)";
+=======
 		String sql = "insert into firstStep values(?, ?, ?, ?)";
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-AI-5/sun5yumi.git
 		psmt = conn.prepareStatement(sql);
+<<<<<<< HEAD
+		psmt.setString(1, cat_info.getId());
+		psmt.setString(2, cat_info.getPw());
+		psmt.setString(3, cat_info.getName());
+=======
 		psmt.setString(1, id);
 		psmt.setString(2, pw);
 		psmt.setString(3, cat_name);
 		psmt.setString(4, cat_species);
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-AI-5/sun5yumi.git
 
 		row = psmt.executeUpdate();
-		
-		if(row > 0) {
-			System.out.println("회원가입 성공");
-		}else {
-			System.out.println("가입 실패");
-		}
 
 	} catch (SQLException e) {
 		System.out.println("연결 오류");
@@ -71,7 +79,16 @@ public class controller {
 	finally {
 		Close();
 	}
+<<<<<<< HEAD
+=======
 	
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-AI-5/sun5yumi.git
 }
 
+<<<<<<< HEAD
+	
+
+
+=======
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-AI-5/sun5yumi.git
 }

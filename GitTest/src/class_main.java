@@ -14,6 +14,7 @@ public class class_main {
 			int num = sc.nextInt();
 			
 			if(num==1) {
+				
 				System.out.println("==회원가입==");
 				System.out.println("ID를 입력해주세요 >> ");
 				String id = sc.next();
