@@ -3,6 +3,11 @@ public class info {
 
 		// 회원정보 필드
 		private String id;
+		
+		public info() {
+			
+		}
+		
 		public info(String id, String pw, String species, int love, int hp, int clean, int sat, String name, int lv,
 				String p_id, int cook, int snack, int sleep, int play, int shower) {
 			super();
