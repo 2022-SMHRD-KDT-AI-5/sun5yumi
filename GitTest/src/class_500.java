@@ -8,9 +8,20 @@ public class class_500 {
 		
 		System.out.println("¹ä¸ÔÀÌ±â[1], °£½Ä[2], Àç¿ì±â[3], ³î¾ÆÁÖ±â[4], »þ¿ö[5]");
 		
+		int choice = sc.nextInt();
 		
 		
-
+		info in = new info();
+		
+		if(choice == 1) {
+			in.setlove(15);
+			in.setsat(50);
+			in.setclean(-10);
+			in.sethp(15);
+		
+		}if(choice == 2) {
+			in.set
+		}
 	}
 
 }
