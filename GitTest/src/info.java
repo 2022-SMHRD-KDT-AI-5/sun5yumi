@@ -3,6 +3,7 @@ public class info {
 
 		// 회원정보 필드
 		private String id;
+		private String pw;
 		
 		public info() {
 			
@@ -27,7 +28,6 @@ public class info {
 			this.play = play;
 			this.shower = shower;
 		}
-		private String pw;
 		//고양이 초기값 필드
 		private String species;
 		private int love;

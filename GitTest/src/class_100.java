@@ -8,7 +8,7 @@ public class class_100 {
 		
 
 		class_400 c4 = new class_400();
-		c4.basic();
+		c4.ranking();
 		
 		
 	}
