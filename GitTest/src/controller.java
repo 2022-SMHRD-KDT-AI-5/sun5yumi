@@ -13,9 +13,9 @@ public class controller {
 	public void getCon() {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String user = "hr";
-			String password = "hr";
+			String url = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe";
+			String user = "cgi_7_0516_3";
+			String password = "smhrd3";
 			
 			conn = DriverManager.getConnection(url, user, password);
 			} catch (ClassNotFoundException e) {
@@ -44,15 +44,16 @@ public class controller {
 		}
 	}
 
+	public void insert(String id, String pw, String cat_name, String cat_species) {
 	// 회원가입 메소드
-	public void insert(info cat_info) {
 	getCon();
 	try {
 		String sql = "insert into firstStep values(?, ?, ?, ?)";
 		psmt = conn.prepareStatement(sql);
-		psmt.setString(1, cat_info.getId());
-		psmt.setString(2, cat_info.getPw());
-		psmt.setString(3, cat_isnfo.getSpecies());
+		psmt.setString(1, id);
+		psmt.setString(2, pw);
+		psmt.setString(3, cat_name);
+		psmt.setString(4, cat_species);
 
 		row = psmt.executeUpdate();
 		
@@ -71,10 +72,6 @@ public class controller {
 		Close();
 	}
 	
-	
-	// 호
-	
 }
-
 
 }
