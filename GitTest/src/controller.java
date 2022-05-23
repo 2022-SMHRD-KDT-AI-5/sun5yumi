@@ -48,11 +48,11 @@ public class controller {
 	public void insert(info cat_info) {
 	getCon();
 	try {
-		String sql = "insert into mem values(?, ?, ?)";
+		String sql = "insert into firstStep values(?, ?, ?, ?)";
 		psmt = conn.prepareStatement(sql);
 		psmt.setString(1, cat_info.getId());
 		psmt.setString(2, cat_info.getPw());
-		psmt.setString(3, cat_info.getSpecies());
+		psmt.setString(3, cat_isnfo.getSpecies());
 
 		row = psmt.executeUpdate();
 		
