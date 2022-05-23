@@ -14,13 +14,13 @@ public class class_500 {
 		info in = new info();
 		
 		if(choice == 1) {
-			in.setlove(15);
-			in.setsat(50);
-			in.setclean(-10);
-			in.sethp(15);
+			in.setLove(15);
+			in.setSat(50);
+			in.setClean(-10);
+			in.setHp(15);
 		
 		}if(choice == 2) {
-			in.set
+			
 		}
 	}
 
