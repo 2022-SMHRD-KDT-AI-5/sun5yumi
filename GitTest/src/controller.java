@@ -65,10 +65,7 @@ public class controller {
 	}
 }
 
-	public void insert(String id, String pw, String cat_name, String cat_species) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 
 }
