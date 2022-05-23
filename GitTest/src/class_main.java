@@ -22,13 +22,12 @@ public class class_main {
 				System.out.println("고양이의 이름을 정해주세요! >> ");
 				String cat_name = sc.next();
 				System.out.println("cat 종류를 선택해주세요 >>");
-				System.out.println("[1] 코리안쇼트 doejdwh"
-				System.out.println("[2]페르시안");
+				System.out.println("[1] 코리안쇼트 기본 애정도:10 체력:10 포만감:15 청결도:-20 ");
+				System.out.println("[2]페르시안 기본 애정도: 10, 체력:20, 포만감:20, 청결도:-30");
 				String cat_species = sc.next();
 				
 				con.insert(id, pw, cat_name, cat_species);
-				
-			
+			}
 		}
 		
 		
