@@ -8,6 +8,7 @@ public class controller {
 	PreparedStatement psmt = null;
 	Connection conn = null;
 	ResultSet rs = null;
+	int row = 0;
 	
 	public void getCon() {
 		try {
@@ -43,6 +44,26 @@ public class controller {
 		}
 	}
 
+	public void insert(info cat_info) {
+	getCon();
+	try {
+		String sql = "insert into mem values(?, ?, ?)";
+		psmt = conn.prepareStatement(sql);
+		psmt.setString(1, cat_info.getId());
+		psmt.setString(2, cat_info.getPw());
+		psmt.setString(3, cat_info.getName());
+
+		row = psmt.executeUpdate();
+
+	} catch (SQLException e) {
+		System.out.println("연결 오류");
+		e.printStackTrace();
+	}
+
+	finally {
+		Close();
+	}
+}
 
 
 }
