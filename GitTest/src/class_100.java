@@ -31,7 +31,10 @@ public class class_100 {
 				break;
 			}
 			
+			//로그인
 			
+			
+			//종료
 		}
 
 	}

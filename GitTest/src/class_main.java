@@ -3,10 +3,7 @@ import java.util.Scanner;
 public class class_main {
 
 	public static void main(String[] args) {
-
 		Scanner sc = new Scanner(System.in);
-		
-		
 		controller con = new controller();
 		
 		while(true) {

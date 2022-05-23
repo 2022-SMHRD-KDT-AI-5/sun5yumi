@@ -12,9 +12,9 @@ public class class_500 {
 		String condition;
 		public void action() {
 			while(true) {
-		System.out.println("밥먹이기[1], 간식[2], 재우기[3], 놀아주기[4], 샤워[5], 초기화[6]");
+		System.out.println("밥먹이기[1], 간식[2], 재우기[3], 놀아주기[4], 샤워[5]");
 		choice = sc.nextInt();
-		
+	
 		if(choice ==1) {
 			Cook();
 			System.out.println();
