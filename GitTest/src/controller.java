@@ -15,7 +15,7 @@ public class controller {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			String url = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe";
 			String user = "cgi_7_0516_3";
-			String password = "smhdr3";
+			String password = "smhrd3";
 
 			conn = DriverManager.getConnection(url, user, password);
 		} catch (ClassNotFoundException e) {

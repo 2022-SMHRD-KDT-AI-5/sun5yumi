@@ -7,7 +7,7 @@ public class class_main {
 		controller con = new controller();
 		
 		while(true) {
-			System.out.print("[1]회원가입 [2]로그인 [3]종료");
+			System.out.println("[1]회원가입 [2]로그인 [3]종료");
 			int num = sc.nextInt();
 			
 			if(num==1) {
@@ -21,7 +21,7 @@ public class class_main {
 				String cat_name = sc.next();
 				System.out.println("cat 종류를 선택해주세요 >>");
 				System.out.println("[1] 코리안쇼트 기본 애정도:10 체력:10 포만감:15 청결도:-20 ");
-				System.out.println("[2]페르시안 기본 애정도: 10, 체력:20, 포만감:20, 청결도:-30");
+				System.out.println("[2] 페르시안 기본 애정도: 10, 체력:20, 포만감:20, 청결도:-30");
 				String cat_species = sc.next();
 				
 				con.insert(id, pw, cat_name, cat_species);
