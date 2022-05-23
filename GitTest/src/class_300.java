@@ -85,4 +85,5 @@ public class class_300 {
 		this.clean = clean;
 	}
 	
+	
 }
